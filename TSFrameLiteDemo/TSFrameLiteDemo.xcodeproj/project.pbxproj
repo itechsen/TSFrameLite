@@ -9,23 +9,44 @@
 /* Begin PBXBuildFile section */
 		7461BF8B1C18298200DD8895 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BF8A1C18298200DD8895 /* main.m */; };
 		7461BF8E1C18298200DD8895 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BF8D1C18298200DD8895 /* AppDelegate.m */; };
-		7461BF911C18298200DD8895 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BF901C18298200DD8895 /* ViewController.m */; };
 		7461BF941C18298200DD8895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7461BF921C18298200DD8895 /* Main.storyboard */; };
 		7461BF961C18298200DD8895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7461BF951C18298200DD8895 /* Assets.xcassets */; };
 		7461BF991C18298200DD8895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7461BF971C18298200DD8895 /* LaunchScreen.storyboard */; };
+		7461BFA71C182CD300DD8895 /* TSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BFA61C182CD300DD8895 /* TSViewController.m */; };
+		7461BFAA1C182CE800DD8895 /* TSModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BFA91C182CE800DD8895 /* TSModelViewController.m */; };
+		7461BFAD1C182D0300DD8895 /* TSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BFAC1C182D0300DD8895 /* TSTableViewController.m */; };
+		7461BFB01C182D5B00DD8895 /* TSNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BFAF1C182D5B00DD8895 /* TSNetWorkManager.m */; };
+		749233E51C182E9800123906 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233E41C182E9800123906 /* Foundation+Log.m */; };
+		749233EA1C1836BC00123906 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233E91C1836BC00123906 /* ViewController.m */; };
+		8830B0726DFE0434A0E571FD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E132EBC4A2175048CBE019 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46E132EBC4A2175048CBE019 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FFC6175685AB05912F98939 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7461BF861C18298200DD8895 /* TSFrameLiteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSFrameLiteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7461BF8A1C18298200DD8895 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7461BF8C1C18298200DD8895 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7461BF8D1C18298200DD8895 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7461BF8F1C18298200DD8895 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7461BF901C18298200DD8895 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7461BF931C18298200DD8895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7461BF951C18298200DD8895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7461BF981C18298200DD8895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7461BF9A1C18298200DD8895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7461BFA51C182CD300DD8895 /* TSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSViewController.h; sourceTree = "<group>"; };
+		7461BFA61C182CD300DD8895 /* TSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSViewController.m; sourceTree = "<group>"; };
+		7461BFA81C182CE800DD8895 /* TSModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSModelViewController.h; sourceTree = "<group>"; };
+		7461BFA91C182CE800DD8895 /* TSModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSModelViewController.m; sourceTree = "<group>"; };
+		7461BFAB1C182D0300DD8895 /* TSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTableViewController.h; sourceTree = "<group>"; };
+		7461BFAC1C182D0300DD8895 /* TSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTableViewController.m; sourceTree = "<group>"; };
+		7461BFAE1C182D5B00DD8895 /* TSNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNetWorkManager.h; sourceTree = "<group>"; };
+		7461BFAF1C182D5B00DD8895 /* TSNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNetWorkManager.m; sourceTree = "<group>"; };
+		749233E21C182E9800123906 /* TSFrameMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSFrameMacro.h; path = ../../../Desktop/ZolOnline/ZolOnline/ThirdParties/TSFrame/TSFrameMacro.h; sourceTree = "<group>"; };
+		749233E31C182E9800123906 /* TSHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSHeader.h; path = ../../../Desktop/ZolOnline/ZolOnline/ThirdParties/TSFrame/TSHeader.h; sourceTree = "<group>"; };
+		749233E41C182E9800123906 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Foundation+Log.m"; path = "../../../Desktop/ZolOnline/ZolOnline/ThirdParties/TSFrame/Foundation+Log.m"; sourceTree = "<group>"; };
+		749233E61C182F8D00123906 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Singleton.h; path = "../../../Desktop/11月前/WorkSpace/OrangeGuestApartment/OrangeGuestApartment/Classes/Main/Category/Singleton.h"; sourceTree = "<group>"; };
+		749233E81C1836BC00123906 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		749233E91C1836BC00123906 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C63106E45DC75D531C3D3AB3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +54,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8830B0726DFE0434A0E571FD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F886075D7E587C7B23A86B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46E132EBC4A2175048CBE019 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7461BF7D1C18298200DD8895 = {
 			isa = PBXGroup;
 			children = (
 				7461BF881C18298200DD8895 /* TSFrameLiteDemo */,
 				7461BF871C18298200DD8895 /* Products */,
+				B8B08DBF813710ADEEDD3571 /* Pods */,
+				5F886075D7E587C7B23A86B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +90,10 @@
 		7461BF881C18298200DD8895 /* TSFrameLiteDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7461BFA11C182A3D00DD8895 /* TSFrameLite */,
+				749233E71C1836BC00123906 /* Classes */,
 				7461BF8C1C18298200DD8895 /* AppDelegate.h */,
 				7461BF8D1C18298200DD8895 /* AppDelegate.m */,
-				7461BF8F1C18298200DD8895 /* ViewController.h */,
-				7461BF901C18298200DD8895 /* ViewController.m */,
 				7461BF921C18298200DD8895 /* Main.storyboard */,
 				7461BF951C18298200DD8895 /* Assets.xcassets */,
 				7461BF971C18298200DD8895 /* LaunchScreen.storyboard */,
@@ -79,6 +111,68 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7461BFA11C182A3D00DD8895 /* TSFrameLite */ = {
+			isa = PBXGroup;
+			children = (
+				749233E61C182F8D00123906 /* Singleton.h */,
+				749233E21C182E9800123906 /* TSFrameMacro.h */,
+				749233E31C182E9800123906 /* TSHeader.h */,
+				749233E41C182E9800123906 /* Foundation+Log.m */,
+				7461BFA21C182A3D00DD8895 /* Network */,
+				7461BFA31C182A3D00DD8895 /* Tool */,
+				7461BFA41C182A3D00DD8895 /* UI */,
+			);
+			name = TSFrameLite;
+			path = ../../TSFrameLite;
+			sourceTree = "<group>";
+		};
+		7461BFA21C182A3D00DD8895 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7461BFAE1C182D5B00DD8895 /* TSNetWorkManager.h */,
+				7461BFAF1C182D5B00DD8895 /* TSNetWorkManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7461BFA31C182A3D00DD8895 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		7461BFA41C182A3D00DD8895 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7461BFA51C182CD300DD8895 /* TSViewController.h */,
+				7461BFA61C182CD300DD8895 /* TSViewController.m */,
+				7461BFA81C182CE800DD8895 /* TSModelViewController.h */,
+				7461BFA91C182CE800DD8895 /* TSModelViewController.m */,
+				7461BFAB1C182D0300DD8895 /* TSTableViewController.h */,
+				7461BFAC1C182D0300DD8895 /* TSTableViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		749233E71C1836BC00123906 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				749233E81C1836BC00123906 /* ViewController.h */,
+				749233E91C1836BC00123906 /* ViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B8B08DBF813710ADEEDD3571 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FFC6175685AB05912F98939 /* Pods.debug.xcconfig */,
+				C63106E45DC75D531C3D3AB3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7461BF9D1C18298200DD8895 /* Build configuration list for PBXNativeTarget "TSFrameLiteDemo" */;
 			buildPhases = (
+				722DD464FD2AECD64A0C1F1E /* Check Pods Manifest.lock */,
 				7461BF821C18298200DD8895 /* Sources */,
 				7461BF831C18298200DD8895 /* Frameworks */,
 				7461BF841C18298200DD8895 /* Resources */,
+				0A2F7CB32B5CA79DD833C796 /* Embed Pods Frameworks */,
+				3C7ABEB9CA8AC8F8726B0DB3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,14 +241,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A2F7CB32B5CA79DD833C796 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C7ABEB9CA8AC8F8726B0DB3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		722DD464FD2AECD64A0C1F1E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7461BF821C18298200DD8895 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7461BF911C18298200DD8895 /* ViewController.m in Sources */,
 				7461BF8E1C18298200DD8895 /* AppDelegate.m in Sources */,
+				7461BFB01C182D5B00DD8895 /* TSNetWorkManager.m in Sources */,
+				749233EA1C1836BC00123906 /* ViewController.m in Sources */,
 				7461BF8B1C18298200DD8895 /* main.m in Sources */,
+				7461BFAA1C182CE800DD8895 /* TSModelViewController.m in Sources */,
+				7461BFAD1C182D0300DD8895 /* TSTableViewController.m in Sources */,
+				7461BFA71C182CD300DD8895 /* TSViewController.m in Sources */,
+				749233E51C182E9800123906 /* Foundation+Log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +409,11 @@
 		};
 		7461BF9E1C18298200DD8895 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FFC6175685AB05912F98939 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TSFrameLiteDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.51talk.TSFrameLiteDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,9 +422,11 @@
 		};
 		7461BF9F1C18298200DD8895 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63106E45DC75D531C3D3AB3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TSFrameLiteDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.51talk.TSFrameLiteDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +452,7 @@
 				7461BF9F1C18298200DD8895 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TSNetWorkManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [TSNetWorkManager sharedManager].baseUrl = nil;
+    [TSNetWorkManager sharedManager].timeoutInterval = 10;
+    [TSNetWorkManager sharedManager].acceptableContentTypes = [NSSet setWithArray:@[@"text/html",@"application/json"]];
     return YES;
 }
 
