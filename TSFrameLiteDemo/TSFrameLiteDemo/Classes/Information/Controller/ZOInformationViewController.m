@@ -32,6 +32,12 @@
     } failure:^(NSError *error) {
         
     }];
+    
+    [ZOInfomationNetworkHelper getInformationListWithParam:param success:^(ZOInfomationResultModel *result) {
+        NSLog(@"%@",result);
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
 
