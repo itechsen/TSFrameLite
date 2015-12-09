@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TSNetWorkManager.h"
-
+#import "ZOInformationViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,9 +19,22 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [TSNetWorkManager sharedManager].baseUrl = nil;
+    [TSNetWorkManager sharedManager].baseUrl = @"http://lib.wap.zol.com.cn/ipj/docList/";
     [TSNetWorkManager sharedManager].timeoutInterval = 10;
     [TSNetWorkManager sharedManager].acceptableContentTypes = [NSSet setWithArray:@[@"text/html",@"application/json"]];
+//    [TSNetWorkManager sharedManager].closeLog = YES;
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
+    [tabBarController addChildViewController:[[ZOInformationViewController alloc] init]];
+    
+    
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

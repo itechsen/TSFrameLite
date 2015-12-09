@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7461BF8B1C18298200DD8895 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BF8A1C18298200DD8895 /* main.m */; };
 		7461BF8E1C18298200DD8895 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BF8D1C18298200DD8895 /* AppDelegate.m */; };
-		7461BF941C18298200DD8895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7461BF921C18298200DD8895 /* Main.storyboard */; };
 		7461BF961C18298200DD8895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7461BF951C18298200DD8895 /* Assets.xcassets */; };
 		7461BF991C18298200DD8895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7461BF971C18298200DD8895 /* LaunchScreen.storyboard */; };
 		7461BFA71C182CD300DD8895 /* TSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BFA61C182CD300DD8895 /* TSViewController.m */; };
@@ -17,7 +16,10 @@
 		7461BFAD1C182D0300DD8895 /* TSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BFAC1C182D0300DD8895 /* TSTableViewController.m */; };
 		7461BFB01C182D5B00DD8895 /* TSNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BFAF1C182D5B00DD8895 /* TSNetWorkManager.m */; };
 		749233E51C182E9800123906 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233E41C182E9800123906 /* Foundation+Log.m */; };
-		749233EA1C1836BC00123906 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233E91C1836BC00123906 /* ViewController.m */; };
+		749234001C1839DA00123906 /* ZOInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233F41C1839DA00123906 /* ZOInformationViewController.m */; };
+		749234011C1839DA00123906 /* ZOInfomationNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233F81C1839DA00123906 /* ZOInfomationNetworkHelper.m */; };
+		749234021C1839DA00123906 /* ZOInfomationRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233FA1C1839DA00123906 /* ZOInfomationRequestModel.m */; };
+		749234031C1839DA00123906 /* ZOInfomationResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233FC1C1839DA00123906 /* ZOInfomationResultModel.m */; };
 		8830B0726DFE0434A0E571FD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E132EBC4A2175048CBE019 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +30,6 @@
 		7461BF8A1C18298200DD8895 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7461BF8C1C18298200DD8895 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7461BF8D1C18298200DD8895 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7461BF931C18298200DD8895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7461BF951C18298200DD8895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7461BF981C18298200DD8895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7461BF9A1C18298200DD8895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,8 +45,14 @@
 		749233E31C182E9800123906 /* TSHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSHeader.h; path = ../../../Desktop/ZolOnline/ZolOnline/ThirdParties/TSFrame/TSHeader.h; sourceTree = "<group>"; };
 		749233E41C182E9800123906 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Foundation+Log.m"; path = "../../../Desktop/ZolOnline/ZolOnline/ThirdParties/TSFrame/Foundation+Log.m"; sourceTree = "<group>"; };
 		749233E61C182F8D00123906 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Singleton.h; path = "../../../Desktop/11月前/WorkSpace/OrangeGuestApartment/OrangeGuestApartment/Classes/Main/Category/Singleton.h"; sourceTree = "<group>"; };
-		749233E81C1836BC00123906 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		749233E91C1836BC00123906 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		749233F31C1839DA00123906 /* ZOInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOInformationViewController.h; sourceTree = "<group>"; };
+		749233F41C1839DA00123906 /* ZOInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOInformationViewController.m; sourceTree = "<group>"; };
+		749233F71C1839DA00123906 /* ZOInfomationNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOInfomationNetworkHelper.h; sourceTree = "<group>"; };
+		749233F81C1839DA00123906 /* ZOInfomationNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOInfomationNetworkHelper.m; sourceTree = "<group>"; };
+		749233F91C1839DA00123906 /* ZOInfomationRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOInfomationRequestModel.h; sourceTree = "<group>"; };
+		749233FA1C1839DA00123906 /* ZOInfomationRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOInfomationRequestModel.m; sourceTree = "<group>"; };
+		749233FB1C1839DA00123906 /* ZOInfomationResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOInfomationResultModel.h; sourceTree = "<group>"; };
+		749233FC1C1839DA00123906 /* ZOInfomationResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOInfomationResultModel.m; sourceTree = "<group>"; };
 		C63106E45DC75D531C3D3AB3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +101,6 @@
 				749233E71C1836BC00123906 /* Classes */,
 				7461BF8C1C18298200DD8895 /* AppDelegate.h */,
 				7461BF8D1C18298200DD8895 /* AppDelegate.m */,
-				7461BF921C18298200DD8895 /* Main.storyboard */,
 				7461BF951C18298200DD8895 /* Assets.xcassets */,
 				7461BF971C18298200DD8895 /* LaunchScreen.storyboard */,
 				7461BF9A1C18298200DD8895 /* Info.plist */,
@@ -158,10 +164,56 @@
 		749233E71C1836BC00123906 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				749233E81C1836BC00123906 /* ViewController.h */,
-				749233E91C1836BC00123906 /* ViewController.m */,
+				749233F11C1839DA00123906 /* Information */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		749233F11C1839DA00123906 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				749233F21C1839DA00123906 /* Controller */,
+				749233F51C1839DA00123906 /* Helper */,
+				749233F61C1839DA00123906 /* Model */,
+				749233FD1C1839DA00123906 /* View */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		749233F21C1839DA00123906 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				749233F31C1839DA00123906 /* ZOInformationViewController.h */,
+				749233F41C1839DA00123906 /* ZOInformationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		749233F51C1839DA00123906 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		749233F61C1839DA00123906 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				749233F71C1839DA00123906 /* ZOInfomationNetworkHelper.h */,
+				749233F81C1839DA00123906 /* ZOInfomationNetworkHelper.m */,
+				749233F91C1839DA00123906 /* ZOInfomationRequestModel.h */,
+				749233FA1C1839DA00123906 /* ZOInfomationRequestModel.m */,
+				749233FB1C1839DA00123906 /* ZOInfomationResultModel.h */,
+				749233FC1C1839DA00123906 /* ZOInfomationResultModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		749233FD1C1839DA00123906 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B8B08DBF813710ADEEDD3571 /* Pods */ = {
@@ -235,7 +287,6 @@
 			files = (
 				7461BF991C18298200DD8895 /* LaunchScreen.storyboard in Resources */,
 				7461BF961C18298200DD8895 /* Assets.xcassets in Resources */,
-				7461BF941C18298200DD8895 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,12 +346,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7461BF8E1C18298200DD8895 /* AppDelegate.m in Sources */,
+				749234011C1839DA00123906 /* ZOInfomationNetworkHelper.m in Sources */,
+				749234031C1839DA00123906 /* ZOInfomationResultModel.m in Sources */,
+				749234021C1839DA00123906 /* ZOInfomationRequestModel.m in Sources */,
 				7461BFB01C182D5B00DD8895 /* TSNetWorkManager.m in Sources */,
-				749233EA1C1836BC00123906 /* ViewController.m in Sources */,
 				7461BF8B1C18298200DD8895 /* main.m in Sources */,
 				7461BFAA1C182CE800DD8895 /* TSModelViewController.m in Sources */,
 				7461BFAD1C182D0300DD8895 /* TSTableViewController.m in Sources */,
 				7461BFA71C182CD300DD8895 /* TSViewController.m in Sources */,
+				749234001C1839DA00123906 /* ZOInformationViewController.m in Sources */,
 				749233E51C182E9800123906 /* Foundation+Log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,14 +362,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7461BF921C18298200DD8895 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7461BF931C18298200DD8895 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7461BF971C18298200DD8895 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
