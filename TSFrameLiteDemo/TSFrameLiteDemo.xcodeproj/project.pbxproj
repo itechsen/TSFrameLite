@@ -15,11 +15,11 @@
 		7461BFAA1C182CE800DD8895 /* TSModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BFA91C182CE800DD8895 /* TSModelViewController.m */; };
 		7461BFAD1C182D0300DD8895 /* TSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BFAC1C182D0300DD8895 /* TSTableViewController.m */; };
 		7461BFB01C182D5B00DD8895 /* TSNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7461BFAF1C182D5B00DD8895 /* TSNetWorkManager.m */; };
-		749233E51C182E9800123906 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233E41C182E9800123906 /* Foundation+Log.m */; };
 		749234001C1839DA00123906 /* ZOInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233F41C1839DA00123906 /* ZOInformationViewController.m */; };
 		749234011C1839DA00123906 /* ZOInfomationNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233F81C1839DA00123906 /* ZOInfomationNetworkHelper.m */; };
 		749234021C1839DA00123906 /* ZOInfomationRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233FA1C1839DA00123906 /* ZOInfomationRequestModel.m */; };
 		749234031C1839DA00123906 /* ZOInfomationResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233FC1C1839DA00123906 /* ZOInfomationResultModel.m */; };
+		749234091C18420400123906 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 749234071C18420400123906 /* Foundation+Log.m */; };
 		8830B0726DFE0434A0E571FD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E132EBC4A2175048CBE019 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +41,6 @@
 		7461BFAC1C182D0300DD8895 /* TSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTableViewController.m; sourceTree = "<group>"; };
 		7461BFAE1C182D5B00DD8895 /* TSNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNetWorkManager.h; sourceTree = "<group>"; };
 		7461BFAF1C182D5B00DD8895 /* TSNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNetWorkManager.m; sourceTree = "<group>"; };
-		749233E21C182E9800123906 /* TSFrameMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSFrameMacro.h; path = ../../../Desktop/ZolOnline/ZolOnline/ThirdParties/TSFrame/TSFrameMacro.h; sourceTree = "<group>"; };
-		749233E31C182E9800123906 /* TSHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSHeader.h; path = ../../../Desktop/ZolOnline/ZolOnline/ThirdParties/TSFrame/TSHeader.h; sourceTree = "<group>"; };
-		749233E41C182E9800123906 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Foundation+Log.m"; path = "../../../Desktop/ZolOnline/ZolOnline/ThirdParties/TSFrame/Foundation+Log.m"; sourceTree = "<group>"; };
-		749233E61C182F8D00123906 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Singleton.h; path = "../../../Desktop/11月前/WorkSpace/OrangeGuestApartment/OrangeGuestApartment/Classes/Main/Category/Singleton.h"; sourceTree = "<group>"; };
 		749233F31C1839DA00123906 /* ZOInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOInformationViewController.h; sourceTree = "<group>"; };
 		749233F41C1839DA00123906 /* ZOInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOInformationViewController.m; sourceTree = "<group>"; };
 		749233F71C1839DA00123906 /* ZOInfomationNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOInfomationNetworkHelper.h; sourceTree = "<group>"; };
@@ -53,6 +49,10 @@
 		749233FA1C1839DA00123906 /* ZOInfomationRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOInfomationRequestModel.m; sourceTree = "<group>"; };
 		749233FB1C1839DA00123906 /* ZOInfomationResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOInfomationResultModel.h; sourceTree = "<group>"; };
 		749233FC1C1839DA00123906 /* ZOInfomationResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOInfomationResultModel.m; sourceTree = "<group>"; };
+		749234051C1841F000123906 /* TSFrameMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSFrameMacro.h; sourceTree = "<group>"; };
+		749234061C1841F000123906 /* TSHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSHeader.h; sourceTree = "<group>"; };
+		749234071C18420400123906 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		749234081C18420400123906 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		C63106E45DC75D531C3D3AB3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,10 +120,6 @@
 		7461BFA11C182A3D00DD8895 /* TSFrameLite */ = {
 			isa = PBXGroup;
 			children = (
-				749233E61C182F8D00123906 /* Singleton.h */,
-				749233E21C182E9800123906 /* TSFrameMacro.h */,
-				749233E31C182E9800123906 /* TSHeader.h */,
-				749233E41C182E9800123906 /* Foundation+Log.m */,
 				7461BFA21C182A3D00DD8895 /* Network */,
 				7461BFA31C182A3D00DD8895 /* Tool */,
 				7461BFA41C182A3D00DD8895 /* UI */,
@@ -135,6 +131,10 @@
 		7461BFA21C182A3D00DD8895 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				749234071C18420400123906 /* Foundation+Log.m */,
+				749234081C18420400123906 /* Singleton.h */,
+				749234051C1841F000123906 /* TSFrameMacro.h */,
+				749234061C1841F000123906 /* TSHeader.h */,
 				7461BFAE1C182D5B00DD8895 /* TSNetWorkManager.h */,
 				7461BFAF1C182D5B00DD8895 /* TSNetWorkManager.m */,
 			);
@@ -350,12 +350,12 @@
 				749234031C1839DA00123906 /* ZOInfomationResultModel.m in Sources */,
 				749234021C1839DA00123906 /* ZOInfomationRequestModel.m in Sources */,
 				7461BFB01C182D5B00DD8895 /* TSNetWorkManager.m in Sources */,
+				749234091C18420400123906 /* Foundation+Log.m in Sources */,
 				7461BF8B1C18298200DD8895 /* main.m in Sources */,
 				7461BFAA1C182CE800DD8895 /* TSModelViewController.m in Sources */,
 				7461BFAD1C182D0300DD8895 /* TSTableViewController.m in Sources */,
 				7461BFA71C182CD300DD8895 /* TSViewController.m in Sources */,
 				749234001C1839DA00123906 /* ZOInformationViewController.m in Sources */,
-				749233E51C182E9800123906 /* Foundation+Log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
