@@ -8,6 +8,7 @@
 
 #import "ZOInformationTableViewCell.h"
 #import <UIImageView+WebCache.h>
+#import <NSDate+YYAdd.h>
 //图片
 static const CGFloat pictureViewLeft = 10;
 static const CGFloat pictureViewTop = 10;
@@ -27,6 +28,8 @@ static const CGFloat pictureViewTopHeight = 67;
 
 @property(nonatomic, strong) UILabel *titleLabel;
 
+@property(nonatomic, strong) UILabel *dateLabel;
+
 
 @end
 
@@ -45,6 +48,11 @@ static const CGFloat pictureViewTopHeight = 67;
         _titleLabel.textColor = [UIColor blackColor];
         [self.contentView addSubview:_titleLabel];
         
+        _dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(_titleLabel.left, _titleLabel.bottom + 5, 100, 11)];
+        _dateLabel.font = [UIFont systemFontOfSize:11];
+        _dateLabel.textColor = HEX_COLOR(0x999999);
+        [self.contentView addSubview:_dateLabel];
+        
 
 
     }
@@ -59,6 +67,8 @@ static const CGFloat pictureViewTopHeight = 67;
         [_pictureView sd_setImageWithURL:[NSURL URLWithString:infoLayout.item.imgsrc]];
         
         _titleLabel.text = infoLayout.item.stitle;
+        
+        _dateLabel.text = [infoLayout.item.sdate stringWithFormat:@"MM-dd"];
    
     }
     
