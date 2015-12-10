@@ -10,6 +10,9 @@
 #import "TSHeader.h"
 @interface TSViewController : UIViewController
 
+/** 是否允许手势返回 默认允许 */
+@property(nonatomic, assign) BOOL canGesturePop;
+
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 
 @end

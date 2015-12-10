@@ -17,13 +17,24 @@
 - (instancetype)initWithDictionary:(NSDictionary<NSString *,id> *)dictionary {
     self = [super init];
     if (self) {
+        self.canGesturePop = YES;
     }
     return self;
 }
 
+#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.navigationController.interactivePopGestureRecognizer.enabled = self.canGesturePop;
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning {

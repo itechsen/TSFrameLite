@@ -58,7 +58,6 @@
         if (self.headerRefreshingBlock) {
             self.headerRefreshingBlock(self.tableView.mj_header);
         }
-
     }];
 }
 
