@@ -7,6 +7,7 @@ pod 'SDWebImage', '~>3.7'
 pod 'MBProgressHUD', '~> 0.9.1'
 pod 'YYModel'
 pod 'YYCategories'
+pod ‘YYText’
 pod 'MJExtension'
 pod 'MJRefresh'
 pod 'Masonry'

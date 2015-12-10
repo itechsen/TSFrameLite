@@ -8,13 +8,22 @@
 
 #import "ZOInfomationResultModel.h"
 #import <MJExtension.h>
-
 @implementation ZOInfomationResultListModel
 
 + (NSDictionary *)mj_replacedKeyFromPropertyName {
     return @{
              @"ID":@"id"
              };
+}
+
+- (id)mj_newValueFromOldValue:(id)oldValue property:(MJProperty *)property
+{
+    if (property.type.typeClass == [NSDate class]) {
+        NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+        fmt.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+        return [fmt dateFromString:oldValue];
+    }
+    return oldValue;
 }
 
 @end

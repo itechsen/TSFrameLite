@@ -15,7 +15,6 @@
 @end
 
 @implementation TSTableViewController
-
 #pragma mark - Life Cycle
 
 - (void)dealloc {
@@ -32,6 +31,14 @@
     [self.view addSubview:_tableView];
 }
 
+
+
+- (NSMutableArray<TSTableViewCellLayout *> *)tableViewItems {
+    if (!_tableViewItems) {
+        _tableViewItems = [NSMutableArray array];
+    }
+    return _tableViewItems;
+}
 /** 需要集成上拉刷新 */
 - (void)needPullUpRefreshView {
     @weakify(self);

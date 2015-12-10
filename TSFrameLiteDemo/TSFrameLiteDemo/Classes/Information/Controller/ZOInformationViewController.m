@@ -9,53 +9,63 @@
 #import "ZOInformationViewController.h"
 #import "ZOInfomationNetworkHelper.h"
 #import <NSDate+YYAdd.h>
+#import "ZOInformationTableViewCell.h"
 
 @implementation ZOInformationViewController
+
+
+
 
 
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-
 
     [self needPullDownRefreshView];
     [self needPullUpRefreshView];
     
     
+    self.tableView.rowHeight = 87.0;
+    
+    
+    
+    [self.tableView registerClass:[ZOInformationTableViewCell class] forCellReuseIdentifier:NSStringFromClass([ZOInformationTableViewCell class])];
+    
     
     [self headerWithRefreshingBlock:^(MJRefreshHeader *refreshHeader) {
-        NSLog(@"下拉刷新了");
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self stopHeaderRefreshing];
-        });
+        ZOInfomationRequestModel *param = [[ZOInfomationRequestModel alloc] init];
+        param.v = @"4.0";
+        param.class_id = @"0";
+        param.page = @"1";
+        [ZOInfomationNetworkHelper getInformationListWithParam:param success:^(ZOInfomationResultModel *result) {
+            for (ZOInfomationResultListModel *resultModel in result.list) {
+                ZOInformationTableViewCellLayout *layout = [[ZOInformationTableViewCellLayout alloc] init];
+                layout.item = resultModel;
+                [self.tableViewItems addObject:layout];
+            }
+            [self.tableView reloadData];
+            [self stopRefreshing];
+        } failure:^(NSError *error) {
+            
+        }];
     }];
     
-    self.title = @"资讯";
+    [self startHeaderRefreshing];
     
-    ZOInfomationRequestModel *param = [[ZOInfomationRequestModel alloc] init];
-    param.v = @"4.0";
-    param.class_id = @"0";
-//    param.last_time = @"2015-12-08 16:18";
-    param.page = @"1";
     
-    [ZOInfomationNetworkHelper getInformationListWithParam:param success:^(ZOInfomationResultModel *result) {
-        NSLog(@"%@",result);
-    } failure:^(NSError *error) {
-        
-    }];
     
-    [ZOInfomationNetworkHelper getInformationListWithParam:param success:^(ZOInfomationResultModel *result) {
-        NSLog(@"%@",result);
-    } failure:^(NSError *error) {
-        
-    }];
+    self.tableView.separatorInset = UIEdgeInsetsMake(0, 10, 0, 10);
 }
 
 
 #pragma mark - UITableViewDataSource
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    ZOInformationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([ZOInformationTableViewCell class])];
+    cell.layout = self.tableViewItems[indexPath.row];
+    return cell;
+    
 }
 
+#pragma mark - UITableViewDelegate
 @end

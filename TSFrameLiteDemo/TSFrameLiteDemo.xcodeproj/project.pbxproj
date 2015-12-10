@@ -20,6 +20,8 @@
 		749234021C1839DA00123906 /* ZOInfomationRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233FA1C1839DA00123906 /* ZOInfomationRequestModel.m */; };
 		749234031C1839DA00123906 /* ZOInfomationResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 749233FC1C1839DA00123906 /* ZOInfomationResultModel.m */; };
 		7492340E1C190F7A00123906 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 7492340A1C190F7A00123906 /* Foundation+Log.m */; };
+		749234171C19633300123906 /* TSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 749234161C19633300123906 /* TSTableViewCell.m */; };
+		7492341A1C19634E00123906 /* ZOInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 749234191C19634E00123906 /* ZOInformationTableViewCell.m */; };
 		8830B0726DFE0434A0E571FD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E132EBC4A2175048CBE019 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,10 @@
 		7492340B1C190F7A00123906 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		7492340C1C190F7A00123906 /* TSFrameMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSFrameMacro.h; sourceTree = "<group>"; };
 		7492340D1C190F7A00123906 /* TSHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSHeader.h; sourceTree = "<group>"; };
+		749234151C19633300123906 /* TSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTableViewCell.h; sourceTree = "<group>"; };
+		749234161C19633300123906 /* TSTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTableViewCell.m; sourceTree = "<group>"; };
+		749234181C19634E00123906 /* ZOInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOInformationTableViewCell.h; sourceTree = "<group>"; };
+		749234191C19634E00123906 /* ZOInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOInformationTableViewCell.m; sourceTree = "<group>"; };
 		C63106E45DC75D531C3D3AB3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +163,8 @@
 				7461BFA91C182CE800DD8895 /* TSModelViewController.m */,
 				7461BFAB1C182D0300DD8895 /* TSTableViewController.h */,
 				7461BFAC1C182D0300DD8895 /* TSTableViewController.m */,
+				749234151C19633300123906 /* TSTableViewCell.h */,
+				749234161C19633300123906 /* TSTableViewCell.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -212,6 +220,8 @@
 		749233FD1C1839DA00123906 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				749234181C19634E00123906 /* ZOInformationTableViewCell.h */,
+				749234191C19634E00123906 /* ZOInformationTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -347,9 +357,11 @@
 			files = (
 				7461BF8E1C18298200DD8895 /* AppDelegate.m in Sources */,
 				749234011C1839DA00123906 /* ZOInfomationNetworkHelper.m in Sources */,
+				749234171C19633300123906 /* TSTableViewCell.m in Sources */,
 				749234031C1839DA00123906 /* ZOInfomationResultModel.m in Sources */,
 				749234021C1839DA00123906 /* ZOInfomationRequestModel.m in Sources */,
 				7461BFB01C182D5B00DD8895 /* TSNetWorkManager.m in Sources */,
+				7492341A1C19634E00123906 /* ZOInformationTableViewCell.m in Sources */,
 				7492340E1C190F7A00123906 /* Foundation+Log.m in Sources */,
 				7461BF8B1C18298200DD8895 /* main.m in Sources */,
 				7461BFAA1C182CE800DD8895 /* TSModelViewController.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "TSModelViewController.h"
 #import <MJRefresh.h>
+#import "TSTableViewCell.h"
 
 
 typedef void (^FooterWithRefreshingBlock)(MJRefreshFooter *refreshFooter);
@@ -17,7 +18,7 @@ typedef void (^HeaderWithRefreshingBlock)(MJRefreshHeader *refreshHeader);
 
 @property(nonatomic, strong) UITableView *tableView;
 
-@property(nonatomic, strong) NSMutableArray *tableViewItems;
+@property(nonatomic, strong) NSMutableArray<TSTableViewCellLayout *> *tableViewItems;
 
 /** 需要集成上拉刷新 */
 - (void)needPullUpRefreshView;

@@ -13,5 +13,6 @@
 #import "TSViewController.h"
 #import <Masonry.h>
 #import <YYCategoriesMacro.h>
+#import <UIView+YYAdd.h>
 
 #endif /* TSHeader_h */

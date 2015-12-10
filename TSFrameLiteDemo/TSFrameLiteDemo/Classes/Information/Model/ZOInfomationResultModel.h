@@ -10,7 +10,7 @@
 
 @interface ZOInfomationResultListModel : NSObject
 @property(nonatomic, copy) NSString *stitle;
-@property(nonatomic, copy) NSString *sdate;
+@property(nonatomic, copy) NSDate *sdate;
 @property(nonatomic, copy) NSString *type;
 @property(nonatomic, copy) NSString *joinPeople;
 @property(nonatomic, copy) NSString *url;
