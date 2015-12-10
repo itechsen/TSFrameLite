@@ -36,6 +36,11 @@
         ZOInfomationRequestModel *param = [[ZOInfomationRequestModel alloc] init];
         param.v = @"4.0";
         param.class_id = @"0";
+        param.isReviewing = @"NO";
+        ZOInformationTableViewCellLayout *layout = (ZOInformationTableViewCellLayout *)self.tableViewItems.firstObject;
+        if (layout) {
+            param.last_time = [layout.item.sdate stringWithFormat:@"yyyy-MM-dd HH:mm"];
+        }
         param.page = @"1";
         [ZOInfomationNetworkHelper getInformationListWithParam:param success:^(ZOInfomationResultModel *result) {
             for (ZOInfomationResultListModel *resultModel in result.list) {
