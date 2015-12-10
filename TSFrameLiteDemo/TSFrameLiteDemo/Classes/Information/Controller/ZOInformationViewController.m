@@ -18,6 +18,18 @@
     [super viewDidLoad];
     
 
+
+    [self needPullDownRefreshView];
+    [self needPullUpRefreshView];
+    
+    
+    
+    [self headerWithRefreshingBlock:^(MJRefreshHeader *refreshHeader) {
+        NSLog(@"下拉刷新了");
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self stopHeaderRefreshing];
+        });
+    }];
     
     self.title = @"资讯";
     
@@ -41,5 +53,9 @@
 }
 
 
+#pragma mark - UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 0;
+}
 
 @end

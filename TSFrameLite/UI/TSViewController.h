@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TSHeader.h"
 @interface TSViewController : UIViewController
+
+- (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 
 @end

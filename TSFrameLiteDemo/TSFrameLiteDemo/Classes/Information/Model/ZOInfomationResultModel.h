@@ -19,6 +19,7 @@
 @property(nonatomic, copy) NSString *imgsrc2;
 @property(nonatomic, strong) NSNumber *comment_num;
 @property(nonatomic, copy) NSString *arrow_pic;
+@property(nonatomic, copy) NSString *label;
 
 @end
 
