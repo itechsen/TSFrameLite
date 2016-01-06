@@ -100,7 +100,6 @@ singleton_m(Manager);
     if (![TSNetWorkManager sharedManager].closeLog) {
         romdomCount = arc4random();
         TSLog(@"url(%ld) ===============>\n%@\nparams = %@",romdomCount,url,params);
-        
     }
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
